@@ -1,4 +1,14 @@
 /*
- *= require animate
- *= require_self
+  *= require font-awesome
+  *= require "theme/normalize.css"
+  *= require "theme/main.css"
+  *= require "theme/bootstrap.min.css"
+  *= require "theme/animate.min.css"
+  *= require "theme/owl.carousel.min.css"
+  *= require "theme/owl.theme.default.min.css"
+  *= require "theme/meanmenu.min.css"
+  *= require "theme/style.css"
+  *= require "nivo-slider"
+  *= require "preview"
+  *= require_self
  */

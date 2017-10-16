@@ -3,3 +3,8 @@
     | ☰
   = link_to 'Admin Panel', admin_root_path, class: 'navbar-brand'
   
+  ul.nav.navbar-nav.top-nav.navbar-right.pull-xs-right
+    li.nav-item.buy-now
+      = link_to root_path, class: "btn btn-primary-outline buy-now-btn", style: 'padding: .375rem 1rem !important; border-color: #999;' do
+        = "Go to site"
+                
