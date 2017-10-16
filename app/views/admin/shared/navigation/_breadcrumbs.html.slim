@@ -1,0 +1,16 @@
+.row
+  .col-lg-12
+    h1.page-header
+      = page_title
+
+    - active_item = breadcrumb_links.pop
+    ol.breadcrumb
+      - breadcrumb_links.each do |link_item|
+        li
+          - if link_item.has_key?(:url)
+            = link_to link_item[:text], link_item[:url]
+          - else
+            = link_item[:text]
+        
+      li.active
+        = active_item[:text]

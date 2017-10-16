@@ -1,0 +1,18 @@
+- breadcrumbs({text: 'Site settings'})
+
+.row
+  .col-lg-6
+    .table-responsive
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            th Key
+            th Value
+            th Action
+        tbody
+          - @settings.each_pair do |key, val|
+            tr
+              td = key
+              td = val
+              td = link_to 'edit', edit_admin_setting_path(key)
+
