@@ -1,7 +1,8 @@
 (function ($) {
 
  "use strict";
-	$('#ensign-nivoslider-3').nivoSlider({
+ console.log('!!');
+	$('#nivoslider').nivoSlider({
 
 		effect: 'fade',
 

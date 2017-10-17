@@ -388,7 +388,7 @@
             var marker = new google.maps.Marker({
                 position: map.getCenter(),
                 animation: google.maps.Animation.BOUNCE,
-                icon: 'img/map-marker.png',
+                icon: 'map-marker.png',
                 map: map
             });
         }
@@ -400,13 +400,27 @@
     -------------------------------------*/
     $(window).on('load resize', function () {
 
-        //Define the maximum height for mobile menu
-        var wHeight = $(window).height();
-        wHeight = wHeight - 68;
-        $('.mean-nav > ul').css('height', wHeight + 'px');
+      //Define the maximum height for mobile menu
+      var wHeight = $(window).height();
+      wHeight = wHeight - 68;
+      $('.mean-nav > ul').css('height', wHeight + 'px');
 
     });
 
+
+    $('#nivoslider').nivoSlider({
+      effect: 'fade',
+      slices: 15,
+      boxCols: 8,
+      boxRows: 4,
+      animSpeed: 500,
+      pauseTime: 366000000,
+      startSlide: 0,
+      directionNav: false,
+      controlNavThumbs: false,
+      pauseOnHover: true,
+      manualAdvance: false
+    }); 
 
 })(jQuery);
 

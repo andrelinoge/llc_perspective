@@ -4,7 +4,6 @@
 
 //= require "theme/owl.carousel.min"
 //= require "jquery.nivo.slider"
-//= require "home"
 //= require "theme/jquery.meanmenu.min"
 //= require "theme/wow.min"
 //= require "theme/plugins"
