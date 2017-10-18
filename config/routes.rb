@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   scope "(:locale)" do
     root 'welcome#index'
+    resource :about, only: :show
+    resource :gallery, only: :show
+
+    resources :contacts, only: [:index, :create]
     
     namespace :admin do
       root 'dashboard#index'
