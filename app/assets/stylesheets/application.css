@@ -10,5 +10,6 @@
   *= require "theme/style.css"
   *= require "nivo-slider"
   *= require "preview"
+  *= require "animate"
   *= require_self
  */

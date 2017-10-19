@@ -1,7 +1,9 @@
 # config/app.yml for rails-settings-cached
 defaults: &defaults
-  foo: "Foo"
-  bar: 123
+  phone: '(095) 524-97-77'
+  phones: ['(095) 524-97-77', '(067) 671-36-99']
+  address: 'Україна, 76018, Івано-Франківська обл. <br/> м. Івано-Франківськ, вул. Незалежності 67'
+  email: 'llc.perspective@i.ua'
 
 development:
   <<: *defaults

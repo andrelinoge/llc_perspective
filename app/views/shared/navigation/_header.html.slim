@@ -5,20 +5,20 @@ header
         .row
           .col-lg-2.col-md-2.col-sm-2.col-xs-12
             .logo-area
-              a href="index.html" 
+              = link_to root_path do
                 = image_tag "logo-white.png", class: 'img-responsive', alt: "logo" 
           .col-lg-8.col-md-8.col-sm-8.col-xs-12
             .main-menu-area
               nav
                 ul
                   li
-                    = link_to 'Home', root_path
+                    = link_to t('navigation.home'), root_path
                   li
-                    = link_to 'About', about_path
+                    = link_to t('navigation.about'), about_path
                   li
-                    = link_to 'Gallery', gallery_path
+                    = link_to t('navigation.gallery'), gallery_path
                   li
-                    = link_to 'Contact', contacts_path
+                    = link_to t('navigation.contact'), contacts_path
             
   /! Mobile Menu Area Start
   .mobile-menu-area
@@ -29,10 +29,10 @@ header
             nav#dropdown
               ul
                 li
-                  = link_to 'Home', root_path
+                  = link_to t('navigation.home'), root_path
                 li
-                  = link_to 'About', about_path
+                  = link_to t('navigation.about'), about_path
                 li
-                  = link_to 'Gallery', gallery_path
+                  = link_to t('navigation.gallery'), gallery_path
                 li
-                  = link_to 'Contact', contacts_path
+                  = link_to t('navigation.contact'), contacts_path

@@ -14,3 +14,4 @@
 //= require "theme/validator.min"
 
 //= require rails-ujs
+//= require bootstrap-notify

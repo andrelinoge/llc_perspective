@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       root 'dashboard#index'
 
       resources :settings, only: [:index, :edit, :update]
+      resources :contacts, only: [:index, :show, :destroy]
     end
   end
 end

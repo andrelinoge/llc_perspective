@@ -1,0 +1,25 @@
+- breadcrumbs([{text: 'Contact messages', url: admin_contacts_path}, {text: 'Message'}])
+
+.row
+  .col-lg-9
+    .table-responsive
+      table.table.table-bordered.table-hover
+        tbody
+          tr
+            td Name
+            td = @contact.name
+          tr
+            td Phone
+            td = @contact.phone
+          tr
+            td E-mail
+            td = @contact.email
+          tr
+            td Message
+            td = @contact.message
+          tr
+            td
+              =< link_to admin_contact_path(@contact), method: :delete, data: { confirm: 'Are you sure?' }  do
+                = fa_icon 'trash', text: 'Delete'
+            td
+
