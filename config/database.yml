@@ -19,5 +19,5 @@ test:
 production:
   <<: *default
   database: llc_perspective_production
-  username: myapp
-  password: <%= ENV['LLC_DATABASE_PASSWORD'] %>
+  username: llc_perspective
+  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
