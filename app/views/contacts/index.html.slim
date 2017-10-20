@@ -1,13 +1,13 @@
 .inner-page-banner-area
   .container
     .pagination-area
-      h2 Contact Us
+      h2 Наш контакти
       ul
         li
-          => link_to 'Home', root_url
+          => link_to 'Головна', root_url
           | &nbsp;/&nbsp;
         li 
-          =< 'Contact'
+          =< 'Наш контакти'
 .contact-us-page-area
   .container
     .row
@@ -16,11 +16,11 @@
           ul
             li
               i.fa.fa-phone aria-hidden="true" 
-              h3 Phone
+              h3 Телефони
               p = Setting.phones.join(';&nbsp;&nbsp;&nbsp;&nbsp;').html_safe
             li
               i.fa.fa-map-marker aria-hidden="true" 
-              h3 Address
+              h3 Адреса
               p = Setting.address.html_safe
             li
               i.fa.fa-envelope-o aria-hidden="true" 
