@@ -1954,7 +1954,7 @@ body.mean-container .wrapper-area {
 4. Inner Page Bannar Area styles
 ========================================*/
 .inner-page-banner-area {
-  background: url(img/inner-page-banner.jpg);
+  background: url(inner-page-banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2130,7 +2130,7 @@ body.mean-container .wrapper-area {
 .about-us2-area {
   padding: 87px 0 75px;
   position: relative;
-  background: url(img/about/about-back.jpg);
+  background: url(about/about-back.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2382,7 +2382,7 @@ body.mean-container .wrapper-area {
 }
 .about-us-page2-area .history-box .history-list li:before {
   position: absolute;
-  content: url(img/about/bullet.png);
+  content: url(about/bullet.png);
   background-repeat: no-repeat;
   top: 0;
   left: -15px;
@@ -2682,7 +2682,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .service3-area {
   padding: 86px 0 75px;
-  background: url(img/service/service3-back.jpg);
+  background: url(service/service3-back.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2944,7 +2944,7 @@ body.mean-container .wrapper-area {
   transition: all 0.5s ease-out;
 }
 .service4-area .service-box:hover {
-  background: url(img/service/service-box-back.png);
+  background: url(service/service-box-back.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition: all 0.3s ease-out;
@@ -3136,7 +3136,7 @@ body.mean-container .wrapper-area {
   width: 100%;
 }
 .service-page2-area .service-box .service-img-holder:before {
-  content: url(img/service/mask.png);
+  content: url(service/mask.png);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3367,7 +3367,7 @@ body.mean-container .wrapper-area {
 }
 .service-page-details-area .service-details-bottom .benefit-box:before {
   position: absolute;
-  content: url(img/about/bullet.png);
+  content: url(about/bullet.png);
   background-repeat: no-repeat;
   top: 0;
   left: -15px;
@@ -3405,7 +3405,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .our-projects1-area {
   padding: 86px 0 100px;
-  background: url(img/project/back.jpg);
+  background: url(project/back.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6222,7 +6222,7 @@ body.mean-container .wrapper-area {
 }
 .client-area .client-inner-area-left {
   position: relative;
-  background: url(img/client/1.jpg);
+  background: url(client/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -6253,7 +6253,7 @@ body.mean-container .wrapper-area {
 }
 .client-area .client-inner-area-right {
   padding: 100px 50px;
-  background: url(img/client/2.jpg);
+  background: url(client/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -6394,7 +6394,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .counter-area {
   padding: 100px 0 60px;
-  background: url(img/counter-back.jpg);
+  background: url(counter-back.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -6495,7 +6495,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .help-contact-banner-area {
   padding: 95px 0 100px;
-  background: url(img/help-contact-banner.jpg);
+  background: url(help-contact-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6557,7 +6557,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .help-contact-banner2-area {
   padding: 95px 0 100px;
-  background: url(img/help-contact-banner2.jpg);
+  background: url(help-contact-banner2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6598,7 +6598,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .contact-banner-area {
   padding: 85px 0 100px;
-  background: url(img/contact-banner.jpg);
+  background: url(contact-banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6648,7 +6648,7 @@ body.mean-container .wrapper-area {
 ---------------------------------------*/
 .contact-banner2-area {
   padding: 96px 0 110px;
-  background: url(img/contact-banner2.jpg) no-repeat;
+  background: url(contact-banner2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -6690,7 +6690,7 @@ body.mean-container .wrapper-area {
   padding: 0;
 }
 .emergrncy-number-area .emergrncy-img-holder {
-  background: url(img/imergency-banner.jpg);
+  background: url(imergency-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -7650,7 +7650,7 @@ body.mean-container .wrapper-area {
 17. Preloader Area Styles 
 ========================================*/
 #preloader {
-  background: #ffffff url('img/preloader.gif') no-repeat scroll center center;
+  background: #ffffff url('preloader.gif') no-repeat scroll center center;
   height: 100%;
   left: 0;
   overflow: visible;
