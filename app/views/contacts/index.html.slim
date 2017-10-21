@@ -1,13 +1,13 @@
 .inner-page-banner-area
   .container
     .pagination-area
-      h2 Наш контакти
+      h2 = t('pages.contacts.title')
       ul
         li
-          => link_to 'Головна', root_url
+          => link_to t('navigation.home'), root_url
           | &nbsp;/&nbsp;
         li 
-          =< 'Наш контакти'
+          =< t('pages.contacts.title')
 .contact-us-page-area
   .container
     .row
@@ -16,11 +16,11 @@
           ul
             li
               i.fa.fa-phone aria-hidden="true" 
-              h3 Телефони
+              h3 =t('pages.contacts.phones')
               p = Setting.phones.join(';&nbsp;&nbsp;&nbsp;&nbsp;').html_safe
             li
               i.fa.fa-map-marker aria-hidden="true" 
-              h3 Адреса
+              h3 =t('pages.contacts.adress') 
               p = Setting.address.html_safe
             li
               i.fa.fa-envelope-o aria-hidden="true" 
@@ -29,18 +29,18 @@
       .col-lg-8.col-md-8.col-sm-8.col-xs-12
         .row
           .col-lg-12.col-md-12.col-sm-12.col-xs-12
-            h2.title-bar50 Send Us Message
+            h2.title-bar50 = t('pages.contacts.send_us_msg')
         .row
           .contact-form
             = simple_form_for @contact do |f|
               fieldset
                 .col-sm-4
                   .form-group
-                    = f.input :name, label: false, placeholder: 'Name*'
+                    = f.input :name, label: false, placeholder: t('contact.placeholders.name')
                     .help-block.with-errors
                 .col-sm-4
                   .form-group
-                    = f.input :phone, label: false, placeholder: 'Phone*'
+                    = f.input :phone, label: false, placeholder: t('contact.placeholders.phone')
                     .help-block.with-errors
                 .col-sm-4
                   .form-group
@@ -48,7 +48,7 @@
                     .help-block.with-errors
                 .col-sm-12
                   .form-group
-                    = f.input :message, as: :text, label: false, placeholder: 'Message*', input_html: {rows: 4}
+                    = f.input :message, as: :text, label: false, placeholder: t('contact.placeholders.message'), input_html: {rows: 4}
                     .help-block.with-errors
                 .col-lg-4.col-md-4.col-sm-6.col-sm-12
                   .form-group
@@ -71,4 +71,4 @@
         .emergrncy-content-holder
           .emergrncy-content-holder-inner
             h3 
-              = raw "Need a gardener? Call: #{Setting.phones.join(';  ')}"
+              = raw t('pages.contacts.call_us', phones: Setting.phones.join(';  ')) 

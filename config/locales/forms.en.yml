@@ -1,3 +1,8 @@
 en:
   contact:
     submit: Send message
+    placeholders:
+      message: Message*
+      name: Name*
+      phone: Phone*
+

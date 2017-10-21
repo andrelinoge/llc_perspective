@@ -1,3 +1,7 @@
 uk:
   contact:
     submit: Надіслати
+    placeholders:
+      message: Ваше повідомлення*
+      name: Ім'я*
+      phone: Телефон*
