@@ -6,10 +6,16 @@
       #slider_caption.t-cn.slider-direction
         .slider-content.s-tb.slider-1
           .title-container.s-tb-c
-            span ТОВ "Перспектива-ІВ"
-            h1.title1 Надання ландшафтних послуг
-            .slider-btn-area
-              = link_to 'Дізнатися більше', about_path, class: 'btn-slider-fill'
+            - if en_locale?
+              span LLC Perspective-IV
+              h1.title1 Providing landscape services
+              .slider-btn-area
+                = link_to 'Read More', about_path, class: 'btn-slider-fill'
+            - else
+              span ТОВ "Перспектива-ІВ"
+              h1.title1 Надання ландшафтних послуг
+              .slider-btn-area
+                = link_to 'Дізнатися більше', about_path, class: 'btn-slider-fill'
       
   /! Slider 4 Area End Here
   /! Service 4 Area Start Here
@@ -17,12 +23,20 @@
     .container
       .section-title-area.col-xs-12
         h2.section-title
-          span< Щ
-          |о
-          span< М
-          |и
-          span< П
-          |ропонуємо
+          - if en_locale?
+            span< W
+            |hat
+            span< W
+            |e
+            span< O
+            |ffer
+          - else
+            span< Щ
+            |о
+            span< М
+            |и
+            span< П
+            |ропонуємо
         .title-bottom-icon
           i.fa.fa-tree aria-hidden="true" 
     .container
@@ -32,38 +46,42 @@
             span
               i.fa.fa-pagelines aria-hidden="true" 
             h3
-              a href="#"  Ландшафтні послуги
-            p Надання ландшафтних послуг - проектування ландшафтної архітектури, укладання рулонного газону, створення посівного газону, посадка рослин, догляд за садом, облаштування альпінаріїв і рокаріїв, влаштування квітників і ландшафтних композицій приватних садиб. <br>Озеленення, догляд і обслуговування парків та садів.
+              a href="#" = Page['home_landscape'].title
+            p = Page['home_landscape'].content.html_safe
             
         .col-lg-4.col-md-4.col-sm-4.col-xs-12
           .service-box
             span
               i.fa.fa-pagelines aria-hidden="true" 
             h3
-              a href="#"  Спортивні майданчики
-            p 
-              | Влаштування спортивних майданчиків (футбольних полів, майданчиків для ігор у гольф тощо). Створення проекту, очищення ділянки від каменів, коренів, пнів, бур'янів;  прокладання комунікацій для забезпечення освітлення, водопостачання; для всіх видів покриття, крім газону - створення щебеневого шару та асфальтобетонної основи; влаштування ігрового покриття. 
+              a href="#" = Page['home_sports_grounds'].title
+            p = Page['home_sports_grounds'].content.html_safe
             
         .col-lg-4.col-md-4.col-sm-4.col-xs-12
           .service-box
             span
               i.fa.fa-pagelines aria-hidden="true" 
             h3
-              a href="#"  Ігрові майданчики
-            p Влаштування ігрових майданчиків, галявин для приймання сонячних ванн та інших місць відпочинку).
+              a href="#" = Page['home_game_grounds'].title
+            p = Page['home_game_grounds'].content.html_safe
             
   /! Service 4 Area End Here
   /! Contact Banner2 Area Start Here
   .contact-banner2-area
     .container
       h2
-        | Ми експерти з усіх
-        br/
-        | ландшафтних робіт
+        - if en_locale?
+          | We are experts from all
+          br/
+          | landscaping works
+        - else
+          | Ми експерти з усіх
+          br/
+          | ландшафтних робіт
       br/
       br/
       br/
-      = link_to 'Наші роботи', gallery_path, class: 'btn-square-transparent'
+      = link_to t('navigation.gallery'), gallery_path, class: 'btn-square-transparent'
       
   /! Contact Banner Area End Here
   /! project 2 Area Start Here
@@ -71,13 +89,19 @@
     .container
       .section-title-area.col-xs-12
         h2.section-title
-          span< У
-          |спішні
-          span< П
-          |роекти
+          - if en_locale?
+            span< S
+            |uccessful
+            span< P
+            |rojects
+          - else
+            span< У
+            |спішні
+            span< П
+            |роекти
         .title-bottom-icon
           i.fa.fa-tree aria-hidden="true" 
-        p Ми завершили десятки успішних проектів для приватних осіб та державних структур.
+        p = Page['home_successfull_projects'].content.html_safe 
     .container
       .our-projects2-carousel.gl-carousel data-autoplay="false" data-autoplay-timeout="10000" data-dots="true" data-items="4" data-loop="true" data-margin="30" data-nav="false" data-nav-speed="false" data-r-medium="4" data-r-medium-dots="true" data-r-medium-nav="false" data-r-small="3" data-r-small-dots="true" data-r-small-nav="false" data-r-x-medium="2" data-r-x-medium-dots="true" data-r-x-medium-nav="false" data-r-x-small="1" data-r-x-small-dots="false" data-r-x-small-nav="true" data-smart-speed="2000" 
         
@@ -128,11 +152,18 @@
       .row
         .col-lg-9.col-md-9.col-sm-12.col-xs-12
           h2
-            span Мрієте про &nbsp;
-            | Квітучий Сад
-            span ?&nbsp; 
-            span Завітайте до&nbsp;
-            | Нас
+            - if en_locale?
+              span Dream about &nbsp;
+              | Beautiful Garden
+              span ?&nbsp; 
+              span Contact&nbsp;
+              | Us
+            - else
+              span Мрієте про &nbsp;
+              | Квітучий Сад
+              span ?&nbsp; 
+              span Завітайте до&nbsp;
+              | Нас
         .col-lg-3.col-md-3.col-sm-12.col-xs-12.text-left
-          = link_to 'Наші Контакти', contacts_path, class: 'btn-contact2'
+          = link_to t('navigation.contact'), contacts_path, class: 'btn-contact2'
   
