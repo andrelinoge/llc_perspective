@@ -3,21 +3,21 @@
     li.list-group-item
       = link_to admin_root_path do
         i.fa.fa-fw.fa-dashboard
-        | Dashboard
+        | Головна
     li.list-group-item
       = link_to admin_contacts_path do
-        i.fa.fa-fw.fa-bar-chart-o
-        | Contacts
+        i.fa.fa-fw.fa-envelope-open-o
+        | Повідомлення
     li.list-group-item
-      a href="tables.html" 
-        i.fa.fa-fw.fa-table
-        | Pages
+      = link_to admin_pages_path do
+        i.fa.fa-fw.fa-book
+        | Сторінки
     li.list-group-item
       a href="forms.html" 
-        i.fa.fa-fw.fa-edit
-        | Gallery
+        i.fa.fa-fw.fa-file-image-o
+        | Галерея робіт
     li.list-group-item
       = link_to admin_settings_path do
-        i.fa.fa-fw.fa-edit
-        | Settings
+        i.fa.fa-fw.fa-cogs
+        | Налаштування сайту
     

@@ -2223,6 +2223,12 @@ body.mean-container .wrapper-area {
   top: 150px;
   right: 50%;
 }
+.en-before:before {
+  content: "Before" !important;
+}
+.uk-before:before {
+  content: "До" !important;
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-us-page1-area .about-us-expert .about-us-details-img-holder:before {
     top: 110px;
@@ -2255,6 +2261,14 @@ body.mean-container .wrapper-area {
   top: 150px;
   left: 50%;
 }
+
+.en-after:after {
+  content: "After" !important;
+}
+.uk-after:after {
+  content: "Після" !important;
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .about-us-page1-area .about-us-expert .about-us-details-img-holder:After {
     top: 110px;

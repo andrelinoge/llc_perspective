@@ -1,0 +1,9 @@
+- breadcrumbs([{text: 'Сторінки', url: admin_pages_path}, {text: 'Редагування'}])
+
+.row
+  .col-lg-12
+    = simple_form_for [:admin, @page] do |f|
+      = f.input :title
+      = f.input :content, as: :ckeditor, input_html: { ckeditor: { toolbar: 'Full' } }
+
+      = f.submit

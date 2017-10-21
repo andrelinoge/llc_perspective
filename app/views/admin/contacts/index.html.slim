@@ -1,16 +1,17 @@
-- breadcrumbs({text: 'Contact messages'})
+- breadcrumbs({text: 'Контактні повідомлення'})
 
 .row
-  .col-lg-6
+  .col-lg-12
     .table-responsive
       table.table.table-bordered.table-hover
         thead
           tr
-            th Name
-            th Phone
+            th Ім'я
+            th Телефон
             th Email
-            th Message
-            th Action
+            th Текст
+            th Надіслано
+            th Дії
         tbody
           - @contacts.all.each do |contact|
             tr
@@ -18,9 +19,11 @@
               td = contact.phone
               td = contact.email
               td = truncate(contact.message)
+              td = contact.created_at.to_formatted_s(:long)
               td
                 => link_to admin_contact_path(contact)  do
-                  = fa_icon 'eye', text: 'View' 
+                  = fa_icon 'eye', text: 'Переглянути' 
+                |&nbsp;&nbsp;&nbsp;
                 =< link_to admin_contact_path(contact), method: :delete, data: { confirm: 'Are you sure?' }  do
-                  = fa_icon 'trash', text: 'Delete'
+                  = fa_icon 'trash', text: 'Видалити'
 

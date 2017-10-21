@@ -4,7 +4,7 @@ module Admin::NavigationHelper
     
     links.unshift({
       url: admin_root_path,
-      text: 'Home'
+      text: 'Головна'
     }) if add_home
 
     page_title = links.last[:text]

@@ -8,3 +8,13 @@ uk:
       phones: Телефони
       send_us_msg: Напишіть нам
       call_us: "Потрібна консультація? <br>Зателефонуйте нам: %{phones}"
+    about:
+      title: Про нашу компанію
+      since: "Заснована в %{year}"
+      expets_msg: Ми експерти в
+      expets:
+        landscape: Ландшафтні роботи
+        sports_grounds: Облаштування спортивних майданчиків
+        game_grounds: Облаштування ігрових майданчиків
+      before: До
+      after: Після

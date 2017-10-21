@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
       resources :settings, only: [:index, :edit, :update]
       resources :contacts, only: [:index, :show, :destroy]
+      resources :pages, only: [:index, :show, :edit, :update]
     end
   end
 end

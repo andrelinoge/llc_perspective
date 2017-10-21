@@ -1,0 +1,13 @@
+- breadcrumbs([{text: 'Сторінки', url: admin_pages_path}, {text: @page.title}])
+
+.row
+  .col-lg-12
+    .table-responsive
+      table.table.table-bordered.table-hover
+        tbody
+          tr
+            td Заголовок
+            td = @page.title
+          tr
+            td Текст
+            td = @page.content.html_safe

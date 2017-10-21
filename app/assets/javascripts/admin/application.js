@@ -3,3 +3,4 @@
 //= require bootstrap
 //= require bootstrap-notify
 //= require rails-ujs
+//= require ckeditor/init

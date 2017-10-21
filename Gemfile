@@ -35,6 +35,8 @@ gem 'slim-rails', '= 3.1.1'
 gem 'truncate_html'
 gem 'therubyracer', platforms: :ruby
 gem 'rails_12factor', group: :production
+gem 'database_cleaner'
+gem 'truncate_html'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

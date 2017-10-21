@@ -1,0 +1,23 @@
+- breadcrumbs({text: 'Сторінки'})
+
+.row
+  .col-lg-12
+    .table-responsive
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            th Загаловок
+            th Текст
+            th Дії
+        tbody
+          - @pages.all.each do |page|
+            tr
+              td = page.title
+              td = truncate_html(page.content)
+              td
+                => link_to admin_page_path(page)  do
+                  = fa_icon 'eye', text: 'Перегляд'
+                |&nbsp;&nbsp;&nbsp;
+                =< link_to edit_admin_page_path(page) do
+                  = fa_icon 'pencil', text: 'Редагувати'
+

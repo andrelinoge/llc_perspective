@@ -4,6 +4,7 @@ defaults: &defaults
   phones: ['(095) 524-97-77', '(067) 671-36-99']
   address: 'Україна, 76018, Івано-Франківська обл. <br/> м. Івано-Франківськ, вул. Незалежності 67'
   email: 'llc.perspective@i.ua'
+  year_of_fundation: 2010
 
 development:
   <<: *defaults

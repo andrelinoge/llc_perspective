@@ -1,4 +1,4 @@
-- breadcrumbs([{text: 'Contact messages', url: admin_contacts_path}, {text: 'Message'}])
+- breadcrumbs([{text: 'Контактні повідомлення', url: admin_contacts_path}, {text: 'Повідомлення'}])
 
 .row
   .col-lg-9
@@ -6,20 +6,20 @@
       table.table.table-bordered.table-hover
         tbody
           tr
-            td Name
+            td Імя
             td = @contact.name
           tr
-            td Phone
+            td Телефон
             td = @contact.phone
           tr
             td E-mail
             td = @contact.email
           tr
-            td Message
+            td Повідомлення
             td = @contact.message
           tr
             td
               =< link_to admin_contact_path(@contact), method: :delete, data: { confirm: 'Are you sure?' }  do
-                = fa_icon 'trash', text: 'Delete'
+                = fa_icon 'trash', text: 'Видалити'
             td
 

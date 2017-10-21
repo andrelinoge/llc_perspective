@@ -8,3 +8,13 @@ en:
       phones: Phones
       send_us_msg: Send Us Message
       call_us: "Ned consultation? Call us: %{phones}"
+    about:
+      title: About our company
+      since: "Since %{year}"
+      expets_msg: We are experts in
+      expets:
+        landscape: Ландшафтні роботи
+        sports_grounds: Arrangement of sports grounds
+        game_grounds: The arrangement of playgrounds
+      before: Before
+      after: After
