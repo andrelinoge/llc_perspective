@@ -1,6 +1,6 @@
 require 'database_cleaner'
 
-puts 'Clean DB...'.yellow
+puts 'Clean DB...'
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean 
 
