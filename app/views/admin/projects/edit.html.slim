@@ -1,0 +1,7 @@
+- breadcrumbs([{text: 'Галерея робіт', url: admin_projects_path}, {text: 'Редагування'}])
+
+.row
+  .col-lg-6
+    = image_tag @project.image.url
+  .col-lg-6
+    = render 'admin/projects/form'

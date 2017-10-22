@@ -1,17 +1,18 @@
 .inner-page-banner-area
   .container
     .pagination-area
-      h2 Services_01
+      h2 = t('pages.gallery.title')
       ul
         li
-          a href="#"  Home
-          | \/
-        li Services
-/! Inner Page Banner Area End Here
-/! Service Page 1 Area Start Here
+          => link_to t('navigation.home'), root_url
+          | &nbsp;/&nbsp;
+        li 
+          =< t('pages.gallery.title')
+
 .service-page1-area
   .container
     .row
+      
       .col-lg-4.col-md-4.col-sm-6.col-xs-6
         .service-box
           ul.service-box-social
@@ -26,6 +27,7 @@
               a href="#"  Cleaning Tree
             p Smply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever type.
             a.btn-submit href="#"  Read More
+
       .col-lg-4.col-md-4.col-sm-6.col-xs-6
         .service-box
           ul.service-box-social

@@ -2,7 +2,12 @@ uk:
   activerecord:
     models:
       contact: Контакти
+      project: Проект
     attributes:
+      project:
+        title: Назва
+        description: Опис
+        image: Фото
       
     errors:
       models:

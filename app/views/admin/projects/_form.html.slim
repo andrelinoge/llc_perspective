@@ -1,0 +1,4 @@
+= simple_form_for [:admin, @project] do |f|
+  = f.input :title
+  = f.input :description, as: :text
+  = f.submit class: 'btn btn-secondary'

@@ -1,0 +1,16 @@
+- breadcrumbs([{text: 'Галерея робіт', url: admin_projects_path}, {text: @project.title}])
+
+.row
+  .col-lg-12
+    .table-responsive
+      table.table.table-bordered.table-hover
+        tbody
+          tr
+            td Назва
+            td = @project.title
+          tr
+            td Фото
+            td = image_tag @project.image.url
+          tr
+            td Опис
+            td = @project.description.html_safe

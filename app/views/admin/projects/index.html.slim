@@ -1,0 +1,34 @@
+- breadcrumbs({text: 'Галерея робіт'})
+
+.row
+  .col-lg-12
+    .pull-right
+      = link_to new_admin_project_path, class: 'btn btn-success' do
+        = fa_icon 'plus', text: 'Додати проект'
+    br
+    br
+.row
+  .col-lg-12
+    .table-responsive
+      table.table.table-bordered.table-hover
+        thead
+          tr
+            th Перегляд
+            th Назва
+            th Опис
+            th Дії
+        tbody
+          - @projects.all.each do |project|
+            tr
+              td = project.title
+              td = truncate_html(project.description)
+              td
+                => link_to admin_project_path(project)  do
+                  = fa_icon 'eye', text: 'Перегляд'
+                |&nbsp;&nbsp;&nbsp;
+                =< link_to edit_admin_project_path(project) do
+                  = fa_icon 'pencil', text: 'Редагувати'
+                |&nbsp;&nbsp;&nbsp;
+                =< link_to edit_admin_project_path(project), method: :delete, data: { confirm: 'Are you sure?' } do
+                  = fa_icon 'trash', text: 'Видалити'
+

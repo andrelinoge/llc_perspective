@@ -2,7 +2,11 @@ en:
   activerecord:
     models:
       contact: Contact
+      project: Project
     attributes:
-      
+      project:
+        title: Title
+        description: Description
+        image: Image
     errors:
       models:
