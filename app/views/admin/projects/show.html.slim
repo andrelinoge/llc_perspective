@@ -10,7 +10,14 @@
             td = @project.title
           tr
             td Фото
-            td = image_tag @project.image.url
+            td = image_tag @project.image.thumb.url, class: 'img-responsive'
           tr
             td Опис
             td = @project.description.html_safe
+          tr
+            td
+              =< link_to edit_admin_project_path(@project) do
+                  = fa_icon 'pencil', text: 'Редагувати'
+            td
+              =< link_to admin_project_path(@project), method: :delete, data: { confirm: 'Are you sure?' } do
+                = fa_icon 'trash', text: 'Видалити'

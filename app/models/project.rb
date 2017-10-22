@@ -10,4 +10,5 @@
 
 class Project < ApplicationRecord
   translates :title, :description
+  mount_uploader :image, ProjectPhotoUploader
 end

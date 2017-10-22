@@ -13,7 +13,7 @@ class Admin::ProjectsController < Admin::ApplicationController
 
   def create
     @project = Project.create(resource_params)
-    
+
     if @project.persisted?
       redirect_to [:admin, @project], flash: { success: 'Project successfully updated' }
     else
@@ -34,6 +34,16 @@ class Admin::ProjectsController < Admin::ApplicationController
     end
   end
 
+  def destroy
+    @project = resource
+    if @project.destroy
+      flash[:success] = 'Project successfully deleted'
+    else
+      flash[:error] = 'Something went wrong'
+    end
+    redirect_to admin_projects_path
+  end 
+
   protected
 
   def collection
@@ -47,6 +57,6 @@ class Admin::ProjectsController < Admin::ApplicationController
   def resource_params
      params
       .require(:project)
-      .permit(:title, :content)
+      .permit(:title, :description, :image)
   end
 end

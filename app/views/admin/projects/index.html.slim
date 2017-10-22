@@ -20,15 +20,16 @@
         tbody
           - @projects.all.each do |project|
             tr
+              td = image_tag project.image.thumb.url, class: 'img-responsive'
               td = project.title
               td = truncate_html(project.description)
               td
                 => link_to admin_project_path(project)  do
                   = fa_icon 'eye', text: 'Перегляд'
-                |&nbsp;&nbsp;&nbsp;
+                br/
                 =< link_to edit_admin_project_path(project) do
                   = fa_icon 'pencil', text: 'Редагувати'
-                |&nbsp;&nbsp;&nbsp;
-                =< link_to edit_admin_project_path(project), method: :delete, data: { confirm: 'Are you sure?' } do
+                br/
+                =< link_to admin_project_path(project), method: :delete, data: { confirm: 'Are you sure?' } do
                   = fa_icon 'trash', text: 'Видалити'
 
