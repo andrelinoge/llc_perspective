@@ -19,6 +19,15 @@ header
                     = link_to t('navigation.gallery'), gallery_path
                   li
                     = link_to t('navigation.contact'), contacts_path
+          .col-lg-2.col-md-2.col-sm-2.col-xs-12
+            ul.header-cart-area.header-top-right
+              - if en_locale?
+                li = link_to 'UK', url_for( :locale => 'uk' ), style: "color: white"
+                li = link_to 'EN', url_for( :locale => 'en' )
+              - else
+                li = link_to 'UK', url_for( :locale => 'uk' )
+                li = link_to 'EN', url_for( :locale => 'en' ), style: "color: white"
+
             
   /! Mobile Menu Area Start
   .mobile-menu-area
