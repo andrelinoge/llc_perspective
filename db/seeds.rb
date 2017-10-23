@@ -43,3 +43,44 @@ Page.create(
   content: "Ми завершили десятки успішних проектів для приватних осіб та державних структур."
 )
 
+projects = [
+  {
+      image: 'project/1.jpg',
+      title: 'Облашутвання скверу',
+      description: ''
+  },
+  {
+      image: 'project/2.jpg',
+      title: 'Вуличний інвентар',
+      description: ''
+  },
+  {
+      image: 'project/3.jpg',
+      title: 'Озеленнення території',
+      description: ''
+  },
+  {
+      image: 'project/4.jpg',
+      title: 'Ландшафтний дизайн',
+      description: ''
+  },
+  {
+      image: 'project/5.jpg',
+      title: 'Приватний сад',
+      description: ''
+  },
+  {
+      image: 'project/6.jpg',
+      title: 'Озеленнення вулиць',
+      description: ''
+  },
+]
+
+projects.each do |project|
+  Project.create(
+    title: project[:title],
+    description: project[:description],
+    image: File.open(Rails.root + "app/assets/images/#{project[:image]}")
+  )
+end
+
